@@ -1,13 +1,9 @@
 *, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
     font-family: 'Onest', sans-serif!important;
 }
 
 :root {
-    /* Colors */
+    /* Color */
     --black-color: #111111;
     --white-color: #ffffff;
     --grey1-color: #cfcfcf;
@@ -15,13 +11,14 @@
     --grey3-color: #888888;
     --orange-color: #ff914a;
 
-    /* Fonts */
+    /* Font size */
     --headline1-size: 32px;
     --headline2-size: 20px;
     --form-size: 16px;
     --description-size: 14px;
     --nick-size: 12px;
 
+    /* Font weight */
     --bold-weight: 600;
     --medium-weight: 500;
     --regual-weight: 400;
@@ -67,10 +64,16 @@
     height: 50px;
     border-radius: 100px;
     background: var(--orange-color);
-    color: #fff;
+    color: var(--white-color);
     border: 0;
     cursor: pointer;
     font-size: var(--form-size);
+}
+
+.btn.disabled{
+    background: var(--grey1-color);
+    color: var(--white-color);
+    cursor: default;
 }
 
 .sign-in__form{
@@ -143,7 +146,7 @@
     top: 50%;
     left: -32px;
     transform: translateY(-50%);
-    background: var(--white-color);
+    background: var(--white-color) url(../img/check.svg);
 }
 
 .sign-in__remember-checkbox:checked ~ .sign-in__remember-label::before{
@@ -159,4 +162,42 @@
     font-size: var(--description-size);
     position: relative;
     margin-left: 32px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.sign-in__password-show{
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.sign-in__password-show svg{
+    width: 24px;
+    height: 24px;
+}
+
+.sign-in__password-show svg{
+    fill: var(--grey1-color);
+    transition: all 0.3s ease;
+}
+
+.sign-in__password-show.view svg{
+    fill: var(--grey3-color);
+}
+
+.logo__big{
+    width: 77px;
+    height: 25px;
 }
