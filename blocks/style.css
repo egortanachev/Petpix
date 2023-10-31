@@ -68,6 +68,7 @@
     border: 0;
     cursor: pointer;
     font-size: var(--form-size);
+    font-weight: var(--regual-weight);
     margin-top: 20px;
 }
 
