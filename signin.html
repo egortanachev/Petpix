@@ -35,13 +35,13 @@
             </div>
             <form class="form sign-in__form" onsubmit="redirect(event)">
                 <span class="block-input sign-in__block-input">
-                    <input class="input sign-in__input input__email" type="email" id="sign-in__input-email" placeholder="Email" tabindex="1">
+                    <input class="input sign-in__input input__email" type="email" id="sign-in__input-email" placeholder="Email" tabindex="1" required>
                     <label class="label sign-in__label" for="sign-in__input-email">Email</label>
                 </span>
                 <span class="block-input sign-in__block-input">
-                    <input class="input sign-in__input input__password" type="password" id="sign-in__input-password"  placeholder="Password" tabindex="2">
+                    <input class="input sign-in__input input__password" type="password" id="sign-in__input-password"  placeholder="Password" tabindex="2" required>
                     <label class="label sign-in__label" for="sign-in__input-password">Password</label>
-                    <a href="#check_password" class="sign-in__password-show">
+                    <a href="#check_password" class="password-show">
                         <svg>
                             <use xlink:href="./img/sprite.svg#password__show"></use>
                         </svg>
@@ -49,8 +49,8 @@
                 </span>
                 <div class="sign-in__block-settings">
                     <div class="sign-in__block-remember">
-                        <input class="sign-in__remember-checkbox" type="checkbox" id="sign-in__remember-checkbox"">
-                        <label class="sign-in__remember-label" for="sign-in__remember-checkbox">Remember me</label>
+                        <input class="checkbox__remember sign-in__remember" type="checkbox" id="sign-in__remember-checkbox">
+                        <label class="label__remember sign-in__remember" for="sign-in__remember-checkbox">Remember me</label>
                     </div>
                     <a href="forgot.html" class="sign-in__forgot">Forgot password?</a>
                 </div>
@@ -64,6 +64,7 @@
     </section>
 
     <!-- Scripts -->
-    <script src="scripts/signin.js"></script>
+    <script src="scripts/inputForm.js"></script>
+    <script src="scripts/showPassword.js"></script>
 </body>
 </html>

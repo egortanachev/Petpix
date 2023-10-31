@@ -14,8 +14,16 @@
     position: relative;
 }
 
-.input:focus{
+.input:focus, .input.initial:focus{
     border: 1px solid var(--black-color);
+}
+
+.input.initial:invalid ~ label {
+    color: var(--grey3-color)
+}
+
+.input.initial:invalid {
+    border: 1px solid var(--grey1-color);
 }
 
 .input:invalid ~ label {
@@ -26,13 +34,13 @@
     border: 1px solid #FB8A8A;
 }
 
-.input:focus:invalid ~ label {
+/* .input:focus:invalid ~ label {
     color: var(--grey3-color)
 }
 
 .input:focus:invalid {
     border: 1px solid var(--black-color);
-}
+} */
 
 .input::-moz-placeholder{
     color: transparent;
@@ -40,4 +48,27 @@
 
 .input::placeholder{
     color: transparent;
+}
+
+.password-show{
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.password-show svg{
+    width: inherit;
+    height: inherit;
+    fill: var(--grey1-color);
+    transition: all 0.3s ease;
+}
+
+.password-show.view svg{
+    fill: var(--grey3-color);
 }

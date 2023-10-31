@@ -6,16 +6,22 @@
 /* PAGES */
 
 /* Sign in */
-@import url(../blocks/signin/signin.css);
+@import url(../blocks/pages/signin/signin.css);
 
 /* Sign up */
-@import url(../blocks/signup/signup.css);
+@import url(../blocks/pages/signup/signup.css);
+
+/* Index */
+@import url(../blocks/pages/index/index.css);
 
 
 /* COMPONENTS */
 
+/* Header */
+@import url(../blocks/components/header.css);
+
 /* Form */
-@import url(../blocks/form/form.css);
+@import url(../blocks/components/form/form.css);
 
 /* Headline */
-@import url(../blocks/headline/headline.css);
+@import url(../blocks/components/headline/headline.css);

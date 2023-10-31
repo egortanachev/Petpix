@@ -1,0 +1,82 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: calc(100% - 32px);
+    max-width: 575px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+.header__logo{
+    display: block;
+    width: 77px;
+    height: 24px;
+}
+
+.header__actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+.header__action-edit{
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+
+.header__action-edit svg{
+    width: inherit;
+    height: inherit;
+    stroke: var(--black-color);
+    transition: all 0.3s ease;
+}
+
+.header__action-edit:hover svg{
+    stroke: var(--orange-color);
+}
+
+.header__action-add{
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+
+.header__action-add input{
+    display: none;
+}
+
+.header__action-add label{
+    display: inherit;
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+}
+
+.header__action-add label svg{
+    width: inherit;
+    height: inherit;
+    stroke: var(--black-color);
+    transition: all 0.3s ease;
+}
+
+.header__action-add:hover label svg{
+    stroke: var(--orange-color);
+}
+
+.header__action-profile{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.header__action-profile img{
+    width: inherit;
+    height: inherit;
+}

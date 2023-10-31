@@ -1,0 +1,32 @@
+.sign-up__form{
+    margin-top: 32px;
+}
+
+.sign-up__photo-input{
+    display: none;
+}
+
+.sign-up__photo-label{
+    display: block;
+    margin: 0 auto 16px auto;
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+}
+
+.sign-up__photo-label img{
+    width: inherit;
+    height: inherit;
+}
+
+.sign-up3 .sign-up__block-remember{
+    margin-top: 16px;
+}
+
+.sign-up__btn{
+    margin-top: 12px;
+}
+
+.sign-up3 .sign-up__btn{
+    margin-top: 20px;
+}

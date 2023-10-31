@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petpix – Sign up</title>
+    <!-- Background settings -->
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon"    type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#ff914a">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Style -->
+    <link rel="stylesheet" href="pages/index.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <!-- SIGN UP -->
+    <section class="sign-up sign-up3">
+        <div class="container">
+            <div class="sign-up__head">
+                <h1 class="section__title sign-up__title">Your profile</h1>
+            </div>
+            <form class="form sign-up__form" onsubmit="redirect3(event)">
+                <div class="sign-up__block-photo">
+                    <input class="sign-up__photo-input" type="file" id="sign-up__photo">
+                    <label class="sign-up__photo-label" for="sign-up__photo">
+                        <img src="img/photo.svg" alt="photo">
+                    </label>
+                </div>
+                <span class="block-input sign-up__block-input">
+                    <input class="input sign-up__input input__email" type="email" id="sign-up__input-email" placeholder="Email" tabindex="1" required>
+                    <label class="label sign-up__label" for="sign-up__input-email">Email</label>
+                </span>
+                <span class="block-input sign-up__block-input">
+                    <input class="input sign-up__input input__username" type="text" id="sign-up__input-username" placeholder="Username" tabindex="2" required>
+                    <label class="label sign-up__label" for="sign-up__input-username">Username</label>
+                </span>
+                <span class="block-input sign-up__block-input">
+                    <input class="input sign-up__input input__password" type="password" id="sign-up__input-password"  placeholder="Password" tabindex="3" required>
+                    <label class="label sign-up__label" for="sign-up__input-password">Password</label>
+                    <a href="#check_password" class="password-show">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#password__show"></use>
+                        </svg>
+                    </a>
+                </span>
+                <div class="sign-up__block-remember">
+                    <input class="checkbox__remember sign-up__remember" type="checkbox" id="sign-up__remember-checkbox">
+                    <label class="label__remember sign-up__remember" for="sign-up__remember-checkbox">Remember me</label>
+                </div>
+                <button class="btn sign-up__btn disabled" type="submit" tabindex="4" disabled>Next</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="scripts/inputForm.js"></script>
+    <script src="scripts/showPassword.js"></script>
+</body>
+</html>

@@ -35,7 +35,7 @@
             </div>
             <form class="form sign-up__form" onsubmit="redirect2(event)">
                 <span class="block-input sign-up__block-input">
-                    <input class="input sign-up__input input__email" type="text" id="sign-up__input-email" placeholder="Email" tabindex="1">
+                    <input class="input sign-up__input input__code" type="number" id="sign-up__input-code" placeholder="Сonfirmation code" tabindex="1" min="1000" max="9999" required>
                     <label class="label sign-up__label" for="sign-up__input-email">Сonfirmation code</label>
                 </span>
                 <button class="btn sign-up__btn disabled" type="submit" tabindex="2" disabled>Next</button>
@@ -44,6 +44,6 @@
     </section>
 
     <!-- Scripts -->
-    <script src="scripts/signup.js"></script>
+    <script src="scripts/inputForm.js"></script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+.sign-in__form{
+    margin-top: 32px;
+}
+
+.sign-in__block-settings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.sign-in__forgot{
+    color: var(--orange-color);
+    font-size: var(--description-size);
+    font-weight: var(--regual-weight);
+}
+
+.sign-in__btn{
+    margin-top: 20px;
+}
