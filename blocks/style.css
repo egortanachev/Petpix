@@ -19,7 +19,7 @@
     --nick-size: 12px;
 
     /* Font weight */
-    --bold-weight: 600;
+    --bold-weight: 700;
     --medium-weight: 500;
     --regual-weight: 400;
 }
@@ -68,6 +68,7 @@
     border: 0;
     cursor: pointer;
     font-size: var(--form-size);
+    margin-top: 20px;
 }
 
 .btn.disabled{
@@ -79,12 +80,16 @@
 .sign-in__form{
     display: flex;
     flex-direction: column;
-    gap: 12px;
     margin-top: 32px;
 }
 
-.sign-in__block-input{
+span.sign-in__block-input{
     position: relative;
+    margin-bottom: 12px;
+}
+
+span.sign-in__block-input:last-of-type {
+    margin-bottom: 0;
 }
 
 .label{
@@ -129,6 +134,7 @@
     background: url(../img/autorization.png) center top;
     background-size: 320px;
     background-repeat: no-repeat;
+    min-height: 586px;
 }
 
 .sign-in__remember-checkbox{
@@ -200,4 +206,36 @@
 .logo__big{
     width: 77px;
     height: 25px;
+}
+
+.sign-in__block-settings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.sign-in__forgot{
+    color: var(--orange-color);
+    font-size: var(--description-size);
+    font-weight: var(--regual-weight);
+}
+
+.sign-in__end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 44px;
+}
+
+.sign-in__message{
+    color: var(--grey3-color);
+    font-size: var(--description-size);
+}
+
+.sign-in__message-link{
+    color: var(--orange-color);
+    font-weight: var(--medium-weight);
+    font-size: var(--form-size);
 }
