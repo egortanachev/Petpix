@@ -2,8 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    width: calc(100% - 32px);
+    width: 100%;
     max-width: 575px;
+    padding: 0 16px;
     height: 40px;
     position: fixed;
     top: 0;
@@ -79,4 +80,30 @@
 .header__action-profile img{
     width: inherit;
     height: inherit;
+}
+
+
+@media (min-width: 399.98px) {
+    .header{
+        height: 60px;
+    }
+    .feed {
+        padding-top: 60px;
+    }
+    .header__logo {
+        width: 102px;
+        height: 33px;
+    }
+    .header__action-edit {
+        width: 26px;
+        height: 26px;
+    }
+    .header__action-add {
+        width: 26px;
+        height: 26px;
+    }
+    .header__action-profile {
+        width: 26px;
+        height: 26px;
+    }
 }

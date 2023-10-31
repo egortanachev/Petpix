@@ -2,3 +2,20 @@
     padding-top: 40px;
     height: 2000px;
 }
+
+h1{
+    font-weight: var(--medium-weight);
+    margin-bottom: 17px;
+    margin-top: 8px;
+}
+
+.post{
+    display: block;
+    width: 100%;
+    height: calc(100vw - 32px);
+    max-height: 543px;
+    background: #e5e5e5;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);
+}
