@@ -1,0 +1,18 @@
+.btn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 100px;
+    background: var(--orange-color);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    font-size: var(--form-size);
+    font-weight: var(--regual-weight);
+}
+
+.btn.disabled{
+    background: var(--grey1-color);
+    color: var(--white-color);
+    cursor: default;
+}

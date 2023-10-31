@@ -1,0 +1,9 @@
+@import url(block-input.css);
+@import url(input.css);
+@import url(label.css);
+@import url(button.css);
+
+.form{
+    display: flex;
+    flex-direction: column;
+}

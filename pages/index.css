@@ -1,2 +1,21 @@
-@import url(../blocks/style.css);
+/* SETTINGS */
+
 @import url(../vendor/normalize.css);
+@import url(../vendor/settings.css);
+
+/* PAGES */
+
+/* Sign in */
+@import url(../blocks/signin/signin.css);
+
+/* Sign up */
+@import url(../blocks/signup/signup.css);
+
+
+/* COMPONENTS */
+
+/* Form */
+@import url(../blocks/form/form.css);
+
+/* Headline */
+@import url(../blocks/headline/headline.css);

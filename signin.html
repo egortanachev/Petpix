@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petpix – Sign in</title>
     <!-- Background settings -->
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#222222" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -28,17 +27,19 @@
         <div class="container">
             <div class="sign-in__head">
                 <h1 class="section__title sign-in__title">Sign in</h1>
-                <svg class="logo__big">
-                    <use xlink:href="./img/sprite.svg#logo__big"></use>
-                </svg>
+                <a class="sign-in__logo" href="signin.html">
+                    <svg class="logo__big">
+                        <use xlink:href="./img/sprite.svg#logo__big"></use>
+                    </svg>
+                </a>
             </div>
-            <form class="sign-in__form" onsubmit="alert('Форма отправлена')">
-                <span class="sign-in__block-input">
-                    <input class="input sign-in__input input__email" type="email" id="sign-in__input-email" placeholder="Email">
+            <form class="form sign-in__form" onsubmit="redirect(event)">
+                <span class="block-input sign-in__block-input">
+                    <input class="input sign-in__input input__email" type="email" id="sign-in__input-email" placeholder="Email" tabindex="1">
                     <label class="label sign-in__label" for="sign-in__input-email">Email</label>
                 </span>
-                <span class="sign-in__block-input">
-                    <input class="input sign-in__input input__password" type="password" id="sign-in__input-password"  placeholder="Password">
+                <span class="block-input sign-in__block-input">
+                    <input class="input sign-in__input input__password" type="password" id="sign-in__input-password"  placeholder="Password" tabindex="2">
                     <label class="label sign-in__label" for="sign-in__input-password">Password</label>
                     <a href="#check_password" class="sign-in__password-show">
                         <svg>
@@ -48,57 +49,21 @@
                 </span>
                 <div class="sign-in__block-settings">
                     <div class="sign-in__block-remember">
-                        <input class="sign-in__remember-checkbox" type="checkbox" id="sign-in__remember-checkbox">
+                        <input class="sign-in__remember-checkbox" type="checkbox" id="sign-in__remember-checkbox"">
                         <label class="sign-in__remember-label" for="sign-in__remember-checkbox">Remember me</label>
                     </div>
                     <a href="forgot.html" class="sign-in__forgot">Forgot password?</a>
                 </div>
-                <button class="btn sign-in__btn disabled" type="submit" disabled>Sign in</button>
+                <button class="btn sign-in__btn disabled" type="submit" tabindex="3" disabled>Sign in</button>
             </form>
             <div class="sign-in__end">
                 <p class="sign-in__message">Don't have an account yet?</p>
-                <a href="signup.html" class="sign-in__message-link">Sign up</a>
+                <a href="signup1.html" class="sign-in__message-link">Sign up</a>
             </div>
         </div>
     </section>
 
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const emailInput = document.querySelector('.input__email');
-            const passwordInput = document.querySelector('.input__password');
-            const signInButton = document.querySelector('.sign-in__btn');
-
-            emailInput.addEventListener('input', checkInputs);
-            passwordInput.addEventListener('input', checkInputs);
-
-            function checkInputs() {
-                if (emailInput.value.trim() !== '' && passwordInput.value.trim() !== '') {
-                    signInButton.classList.remove('disabled');
-                    signInButton.disabled = false;
-                } else {
-                    signInButton.classList.add('disabled');
-                    signInButton.disabled = true;
-                }
-            }
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const passwordControl = document.querySelector('.sign-in__password-show');
-            const passwordInput = document.querySelector('.input__password');
-
-            passwordControl.addEventListener('click', event => {
-                if (passwordInput.getAttribute('type') === 'password') {
-                    passwordControl.classList.add('view');
-                    passwordInput.setAttribute('type', 'text');
-                } else {
-                    passwordControl.classList.remove('view');
-                    passwordInput.setAttribute('type', 'password');
-                }
-                event.preventDefault();
-            });
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="scripts/signin.js"></script>
 </body>
 </html>
