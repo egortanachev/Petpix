@@ -1,0 +1,33 @@
+.feed__mode{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.feed__mode::before{
+    content: '';
+    background: #000;
+    width: 88px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    transition: all 0.2s ease-in;
+}
+
+.mode2::before{
+    width: 79px;
+    left: 104px;
+}
+
+.mode1 .feed__title:nth-child(2),
+.mode2 .feed__title:nth-child(1){
+    color: var(--grey2-color);
+}
+
+.feed__title{
+    transition: all 0.2s ease-in;
+}

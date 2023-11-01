@@ -23,5 +23,8 @@
 /* Form */
 @import url(../blocks/components/form/form.css);
 
+/* Post */
+@import url(../blocks/components/post/post.css);
+
 /* Text styles */
 @import url(../blocks/components/text.css);

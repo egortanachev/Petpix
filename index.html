@@ -39,7 +39,7 @@
                 </label>
             </div>
             <a href="profile.html" class="header__action-profile">
-                <img src="image/avatar__small.svg" alt="photo">
+                <img src="image/avatar__small.svg" alt="avatar">
             </a>
         </div>
     </header>
@@ -47,20 +47,100 @@
     <!-- FEED -->
     <section class="feed">
         <div class="container">
-            <h2 class="headline2 active">Feed</h2>
-            <h2 class="headline2 inactive">All users</h2>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
+            <div class="feed__mode mode1">
+                <a href="#favorites" class="feed__title headline2">Favorites</a>
+                <a href="#all" class="feed__title headline2">All users</a>
+            </div>
+
+            <!-- Posts -->
+            <div class="feed__post post">
+                <div class="post__user">
+                    <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
+                    <h3 class="post__user-username headline3">simon_cat</h3>
+                </div>
+                <img src="image/posts/post1.jpg" alt="photo" class="post__photo">
+                <div class="post__info">
+                    <div class="post__info-like">
+                        <svg class="post__info-like-svg">
+                            <use xlink:href="./image/sprite.svg#post__like"></use>
+                        </svg>
+                        <p class="post__info-like-value headline3">1 153 Likes</p>
+                    </div>
+                    <div class="post__info-date regular12">
+                        28/11/2023
+                    </div>
+                </div>
+                <p class="post__description regular14">
+                    Username Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                </p>
+            </div>
+            <div class="feed__post post">
+                <div class="post__user">
+                    <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
+                    <h3 class="post__user-username headline3">simon_cat</h3>
+                </div>
+                <img src="image/posts/post1.jpg" alt="photo" class="post__photo">
+                <div class="post__info">
+                    <div class="post__info-like">
+                        <svg class="post__info-like-svg">
+                            <use xlink:href="./image/sprite.svg#post__like"></use>
+                        </svg>
+                        <p class="post__info-like-value headline3">1 153 Likes</p>
+                    </div>
+                    <div class="post__info-date regular12">
+                        28/11/2023
+                    </div>
+                </div>
+                <p class="post__description regular14">
+                    Username Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                </p>
+            </div>
+            <div class="feed__post post">
+                <div class="post__user">
+                    <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
+                    <h3 class="post__user-username headline3">simon_cat</h3>
+                </div>
+                <img src="image/posts/post1.jpg" alt="photo" class="post__photo">
+                <div class="post__info">
+                    <div class="post__info-like">
+                        <svg class="post__info-like-svg">
+                            <use xlink:href="./image/sprite.svg#post__like"></use>
+                        </svg>
+                        <p class="post__info-like-value headline3">1 153 Likes</p>
+                    </div>
+                    <div class="post__info-date regular12">
+                        28/11/2023
+                    </div>
+                </div>
+                <p class="post__description regular14">
+                    Username Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                </p>
+            </div>
+            <div class="feed__post post">
+                <div class="post__user">
+                    <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
+                    <h3 class="post__user-username headline3">simon_cat</h3>
+                </div>
+                <img src="image/posts/post1.jpg" alt="photo" class="post__photo">
+                <div class="post__info">
+                    <div class="post__info-like">
+                        <svg class="post__info-like-svg">
+                            <use xlink:href="./image/sprite.svg#post__like"></use>
+                        </svg>
+                        <p class="post__info-like-value headline3">1 153 Likes</p>
+                    </div>
+                    <div class="post__info-date regular12">
+                        28/11/2023
+                    </div>
+                </div>
+                <p class="post__description regular14">
+                    Username Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                </p>
+            </div>
         </div>
     </section>
 
+    <!-- Scripts -->
+    <script src="scripts/changeMode.js"></script>
 </body>
 </html>

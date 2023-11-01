@@ -1,0 +1,26 @@
+.post__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.post__info-like{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.post__info-like-svg{
+    display: block;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.post__info-like-svg use .black{
+    fill: red;
+}
+
+.post__info-date{
+    color: var(--grey3-color);
+}
