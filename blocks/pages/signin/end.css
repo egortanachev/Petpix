@@ -8,11 +8,11 @@
 
 .sign-in__message{
     color: var(--grey3-color);
-    font-size: var(--description-size);
+    font-size: var(--text14-size);
 }
 
 .sign-in__message-link{
     color: var(--orange-color);
     font-weight: var(--medium-weight);
-    font-size: var(--form-size);
+    font-size: var(--text16-size);
 }

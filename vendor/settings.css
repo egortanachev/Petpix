@@ -4,19 +4,20 @@
 
 :root {
     /* Color */
-    --black-color: #111111;
     --white-color: #ffffff;
     --grey1-color: #cfcfcf;
     --grey2-color: #cfcfcf;
     --grey3-color: #888888;
+    --black-color: #111111;
     --orange-color: #ff914a;
+    --error-color: #fb8a8a;
 
     /* Font size */
     --headline1-size: 32px;
     --headline2-size: 20px;
-    --form-size: 16px;
-    --description-size: 14px;
-    --nick-size: 12px;
+    --text16-size: 16px;
+    --text14-size: 14px;
+    --text12-size: 12px;
 
     /* Font weight */
     --bold-weight: 700;

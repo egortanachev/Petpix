@@ -11,6 +11,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: #fff;
+    z-index: 2;
 }
 
 .header__logo{
@@ -35,12 +36,12 @@
 .header__action-edit svg{
     width: inherit;
     height: inherit;
-    stroke: var(--black-color);
+    fill: var(--black-color);
     transition: all 0.3s ease;
 }
 
 .header__action-edit:hover svg{
-    stroke: var(--orange-color);
+    fill: var(--orange-color);
 }
 
 .header__action-add{
@@ -63,12 +64,12 @@
 .header__action-add label svg{
     width: inherit;
     height: inherit;
-    stroke: var(--black-color);
+    fill: var(--black-color);
     transition: all 0.3s ease;
 }
 
 .header__action-add:hover label svg{
-    stroke: var(--orange-color);
+    fill: var(--orange-color);
 }
 
 .header__action-profile{

@@ -10,5 +10,5 @@
 .block-input .input:focus~.label,
 .block-input .input:not(:placeholder-shown)~.label{
     transform: translateY(-12px);
-    font-size: 12px;
+    font-size: var(--text12-size);
 }
