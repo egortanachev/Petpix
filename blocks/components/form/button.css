@@ -7,8 +7,6 @@
     color: var(--white-color);
     border: 0;
     cursor: pointer;
-    font-size: var(--text16-size);
-    font-weight: var(--regual-weight);
 }
 
 .btn.disabled{

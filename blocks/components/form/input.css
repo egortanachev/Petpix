@@ -5,7 +5,6 @@
     border-radius: 100px;
     border: 1px solid var(--grey1-color);
     padding: 0 16px;
-    font-size: var(--text16-size);
     padding-top: 10px;
     transition: all .15s ease-in-out;
     color: var(--black-color);
@@ -40,6 +39,12 @@
 
 .input::placeholder{
     color: transparent;
+}
+
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"]{
+    display: none;
 }
 
 .password-show{

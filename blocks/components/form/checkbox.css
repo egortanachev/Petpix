@@ -1,10 +1,5 @@
-.checkbox__remember{
-    display: none;
-}
-
 .label__remember{
     color: var(--grey3-color);
-    font-size: var(--text14-size);
     position: relative;
     margin-left: 32px;
     cursor: pointer;
@@ -27,11 +22,11 @@
     top: 50%;
     left: -32px;
     transform: translateY(-50%);
-    background: var(--white-color) url(../../../img/check.svg);
+    background: var(--white-color) url(../../../image/check.svg);
 }
 
 .checkbox__remember:checked ~ .label__remember::before{
-    background: var(--black-color) url(../../../img/check.svg);
+    background: var(--black-color) url(../../../image/check.svg);
     background-size: 9px;
     background-position: center center;
     background-repeat: no-repeat;

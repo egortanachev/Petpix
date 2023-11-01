@@ -23,5 +23,5 @@
 /* Form */
 @import url(../blocks/components/form/form.css);
 
-/* Headline */
-@import url(../blocks/components/headline.css);
+/* Text styles */
+@import url(../blocks/components/text.css);

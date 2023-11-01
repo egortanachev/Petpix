@@ -7,11 +7,11 @@
     <!-- Background settings -->
     <meta name="theme-color" content="#ffffff">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#ff914a">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="image/favicon/site.webmanifest">
+    <link rel="mask-icon" href="image/favicon/safari-pinned-tab.svg" color="#ff914a">
     <meta name="msapplication-TileColor" content="#ff0000">
     <meta name="theme-color" content="#ffffff">
     <!-- Style -->
@@ -26,39 +26,39 @@
     <section class="sign-in">
         <div class="container">
             <div class="sign-in__head">
-                <h1 class="headline1 sign-in__title">Sign in</h1>
+                <h1 class="sign-in__title headline1">Sign in</h1>
                 <a class="sign-in__logo" href="signin.html">
                     <svg class="logo__big">
-                        <use xlink:href="./img/sprite.svg#logo__big"></use>
+                        <use xlink:href="./image/sprite.svg#logo__big"></use>
                     </svg>
                 </a>
             </div>
             <form class="form sign-in__form" onsubmit="redirect(event)">
                 <span class="block-input sign-in__block-input">
-                    <input class="input sign-in__input input__email" type="email" id="sign-in__input-email" placeholder="Email" tabindex="1" required>
-                    <label class="label sign-in__label" for="sign-in__input-email">Email</label>
+                    <input class="input sign-in__input input__email regular16" type="email" id="sign-in__input-email" placeholder="Email" tabindex="1" required>
+                    <label class="label sign-in__label regular16" for="sign-in__input-email">Email</label>
                 </span>
                 <span class="block-input sign-in__block-input">
-                    <input class="input sign-in__input input__password" type="password" id="sign-in__input-password"  placeholder="Password" tabindex="2" required>
-                    <label class="label sign-in__label" for="sign-in__input-password">Password</label>
+                    <input class="input sign-in__input input__password regular16" type="password" id="sign-in__input-password"  placeholder="Password" tabindex="2" required>
+                    <label class="label sign-in__label regular16" for="sign-in__input-password">Password</label>
                     <a href="#check_password" class="password-show">
                         <svg>
-                            <use xlink:href="./img/sprite.svg#password__show"></use>
+                            <use xlink:href="./image/sprite.svg#password__show"></use>
                         </svg>
                     </a>
                 </span>
                 <div class="sign-in__block-settings">
                     <div class="sign-in__block-remember">
                         <input class="checkbox__remember sign-in__remember" type="checkbox" id="sign-in__remember-checkbox">
-                        <label class="label__remember sign-in__remember" for="sign-in__remember-checkbox">Remember me</label>
+                        <label class="label__remember sign-in__remember regular14" for="sign-in__remember-checkbox">Remember me</label>
                     </div>
-                    <a href="forgot.html" class="sign-in__forgot">Forgot password?</a>
+                    <a href="forgot.html" class="sign-in__forgot regular14">Forgot password?</a>
                 </div>
-                <button class="btn sign-in__btn disabled" type="submit" tabindex="3" disabled>Sign in</button>
+                <button class="btn sign-in__btn regular14 disabled" type="submit" tabindex="3" disabled>Sign in</button>
             </form>
             <div class="sign-in__end">
-                <p class="sign-in__message">Don't have an account yet?</p>
-                <a href="signup1.html" class="sign-in__message-link">Sign up</a>
+                <p class="sign-in__message regular14">Don't have an account yet?</p>
+                <a href="signup1.html" class="sign-in__message-link medium16">Sign up</a>
             </div>
         </div>
     </section>

@@ -11,8 +11,6 @@
 
 .sign-in__forgot{
     color: var(--orange-color);
-    font-size: var(--text14-size);
-    font-weight: var(--regual-weight);
 }
 
 .sign-in__btn{

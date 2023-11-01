@@ -8,11 +8,8 @@
 
 .sign-up__message{
     color: var(--grey3-color);
-    font-size: var(--text14-size);
 }
 
 .sign-up__message-link{
     color: var(--orange-color);
-    font-weight: var(--medium-weight);
-    font-size: var(--text16-size);
 }
