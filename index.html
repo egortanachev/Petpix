@@ -52,17 +52,31 @@
                 <a href="#all" class="feed__title headline2">All users</a>
             </div>
 
+            <!-- DUMMY -->
+            <!-- <div class="feed_dummy">
+                <h3 class="feed_dummy-title headline1">No favorites yet</h3>
+                <p class="feed_dummy-description regular14">See posts of other users and add to your favorites</p>
+                <a href="#all" class="feed_dummy-btn btn regular16" onclick="handleLinkClick(event);">View posts by all users</a>
+            </div> -->
+
             <!-- Posts -->
-            <div class="feed__post post">
+            <div class="feed__post post favorite liked">
                 <div class="post__user">
-                    <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
-                    <h3 class="post__user-username headline3">simon_cat</h3>
+                    <a href="user.html" class="post__user-info">
+                        <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
+                        <h3 class="post__user-username headline3">simon_cat</h3>
+                    </a>
+                    <svg class="post__user-subscribe">
+                        <use xlink:href="./image/sprite.svg#user__subscribe1"></use>
+                        <use xlink:href="./image/sprite.svg#user__subscribe2"></use>
+                    </svg>
                 </div>
-                <img src="image/posts/post1.jpg" alt="photo" class="post__photo">
+                <img src="image/posts/post1.jpg" loading="lazy" alt="photo" class="post__photo">
                 <div class="post__info">
                     <div class="post__info-like">
                         <svg class="post__info-like-svg">
-                            <use xlink:href="./image/sprite.svg#post__like"></use>
+                            <use xlink:href="./image/sprite.svg#post__like-inside"></use>
+                            <use xlink:href="./image/sprite.svg#post__like-outside"></use>
                         </svg>
                         <p class="post__info-like-value headline3">1 153 Likes</p>
                     </div>
@@ -70,71 +84,101 @@
                         28/11/2023
                     </div>
                 </div>
-                <p class="post__description regular14">
-                    Username Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                <p class="post__description text__more regular14">
+                    <span class="text__expand regular14">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius.
+                    </span>
                 </p>
             </div>
             <div class="feed__post post">
                 <div class="post__user">
-                    <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
-                    <h3 class="post__user-username headline3">simon_cat</h3>
+                    <a href="user.html" class="post__user-info">
+                        <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
+                        <h3 class="post__user-username headline3">sweetbun009</h3>
+                    </a>
+                    <svg class="post__user-subscribe">
+                        <use xlink:href="./image/sprite.svg#user__subscribe1"></use>
+                        <use xlink:href="./image/sprite.svg#user__subscribe2"></use>
+                    </svg>
                 </div>
-                <img src="image/posts/post1.jpg" alt="photo" class="post__photo">
+                <img src="image/posts/post2.jpg" loading="lazy" alt="photo" class="post__photo">
                 <div class="post__info">
                     <div class="post__info-like">
                         <svg class="post__info-like-svg">
-                            <use xlink:href="./image/sprite.svg#post__like"></use>
+                            <use xlink:href="./image/sprite.svg#post__like-inside"></use>
+                            <use xlink:href="./image/sprite.svg#post__like-outside"></use>
                         </svg>
-                        <p class="post__info-like-value headline3">1 153 Likes</p>
+                        <p class="post__info-like-value headline3">317 Likes</p>
                     </div>
                     <div class="post__info-date regular12">
-                        28/11/2023
+                        26/11/2023
                     </div>
                 </div>
-                <p class="post__description regular14">
-                    Username Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                <p class="post__description text__more regular14">
+                    <span class="text__expand regular14">
+                        Good morning!
+                    </span>
+
                 </p>
             </div>
             <div class="feed__post post">
                 <div class="post__user">
-                    <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
-                    <h3 class="post__user-username headline3">simon_cat</h3>
+                    <a href="user.html" class="post__user-info">
+                        <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
+                        <h3 class="post__user-username headline3">1cute_parrot</h3>
+                    </a>
+                    <svg class="post__user-subscribe">
+                        <use xlink:href="./image/sprite.svg#user__subscribe1"></use>
+                        <use xlink:href="./image/sprite.svg#user__subscribe2"></use>
+                    </svg>
                 </div>
-                <img src="image/posts/post1.jpg" alt="photo" class="post__photo">
+                <img src="image/posts/post3.jpg" loading="lazy" alt="photo" class="post__photo">
                 <div class="post__info">
                     <div class="post__info-like">
                         <svg class="post__info-like-svg">
-                            <use xlink:href="./image/sprite.svg#post__like"></use>
+                            <use xlink:href="./image/sprite.svg#post__like-inside"></use>
+                            <use xlink:href="./image/sprite.svg#post__like-outside"></use>
                         </svg>
-                        <p class="post__info-like-value headline3">1 153 Likes</p>
+                        <p class="post__info-like-value headline3">734 Likes</p>
                     </div>
                     <div class="post__info-date regular12">
-                        28/11/2023
+                        22/11/2023
                     </div>
                 </div>
-                <p class="post__description regular14">
-                    Username Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                <p class="post__description text__more regular14">
+                    <span class="text__expand regular14">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius.
+                    </span>
                 </p>
             </div>
-            <div class="feed__post post">
+            <div class="feed__post post favorite liked">
                 <div class="post__user">
-                    <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
-                    <h3 class="post__user-username headline3">simon_cat</h3>
+                    <a href="user.html" class="post__user-info">
+                        <img src="image/avatar__medium.svg" alt="avatar" class="post__user-avatar">
+                        <h3 class="post__user-username headline3">simon_cat</h3>
+                    </a>
+                    <svg class="post__user-subscribe">
+                        <use xlink:href="./image/sprite.svg#user__subscribe1"></use>
+                        <use xlink:href="./image/sprite.svg#user__subscribe2"></use>
+                    </svg>
                 </div>
-                <img src="image/posts/post1.jpg" alt="photo" class="post__photo">
+                <img src="image/posts/post4.jpg" loading="lazy" alt="photo" class="post__photo">
                 <div class="post__info">
                     <div class="post__info-like">
                         <svg class="post__info-like-svg">
-                            <use xlink:href="./image/sprite.svg#post__like"></use>
+                            <use xlink:href="./image/sprite.svg#post__like-inside"></use>
+                            <use xlink:href="./image/sprite.svg#post__like-outside"></use>
                         </svg>
-                        <p class="post__info-like-value headline3">1 153 Likes</p>
+                        <p class="post__info-like-value headline3">101 Likes</p>
                     </div>
                     <div class="post__info-date regular12">
-                        28/11/2023
+                        21/11/2023
                     </div>
                 </div>
-                <p class="post__description regular14">
-                    Username Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                <p class="post__description text__more regular14">
+                    <span class="text__expand regular14">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius.
+                    </span>
                 </p>
             </div>
         </div>
@@ -142,5 +186,8 @@
 
     <!-- Scripts -->
     <script src="scripts/changeMode.js"></script>
+    <script src="scripts/likePost.js"></script>
+    <script src="scripts/addFavorite.js"></script>
+    <script src="scripts/showText.js"></script>
 </body>
 </html>

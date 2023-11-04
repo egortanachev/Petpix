@@ -27,20 +27,26 @@
     gap: 24px;
 }
 
-.header__action-edit, .header__action-add, .header__action-profile{
+.header__action-edit,
+.header__action-add,
+.header__action-profile,
+.header__action-favorite{
     display: block;
     width: 22px;
     height: 22px;
 }
 
-.header__action-edit svg, .header__action-add label svg{
+.header__action-edit svg,
+.header__action-add label svg,
+.header__action-favorite svg{
     width: inherit;
     height: inherit;
     fill: var(--black-color);
     transition: all 0.3s ease;
 }
 
-.header__action-edit:hover svg, .header__action-add:hover label svg{
+.header__action-edit:hover svg,
+.header__action-add:hover label svg{
     fill: var(--orange-color);
 }
 
