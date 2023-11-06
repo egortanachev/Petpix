@@ -14,6 +14,9 @@
 /* Index */
 @import url(../blocks/pages/index/index.css);
 
+/* Profile */
+@import url(../blocks/pages/profile/profile.css);
+
 
 /* COMPONENTS */
 
@@ -25,6 +28,9 @@
 
 /* Post */
 @import url(../blocks/components/post/post.css);
+
+/* Head */
+@import url(../blocks/components/head/head.css);
 
 /* Text styles */
 @import url(../blocks/components/text.css);

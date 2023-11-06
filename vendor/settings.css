@@ -32,3 +32,11 @@
     padding: 0 16px;
     max-width: 575px;
 }
+
+.body__portal{
+    padding-top: 48px;
+}
+
+.hidden{
+    display: none;
+}

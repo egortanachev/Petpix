@@ -2,13 +2,21 @@
  function changeClassBasedOnURL() {
     const currentURL = window.location.href;
     const feedModeElement = document.querySelector('.feed__mode');
+    const feedDummyElement = document.querySelector('.feed_dummy');
+    const feedPostElement = document.querySelector('.feed__posts');
 
     if (currentURL.includes('#all')) {
         feedModeElement.classList.remove('mode1');
         feedModeElement.classList.add('mode2');
+        // Переключение постов
+        feedDummyElement.classList.add('hidden');
+        feedPostElement.classList.remove('hidden');
     } else {
         feedModeElement.classList.remove('mode2');
         feedModeElement.classList.add('mode1');
+        // Переключение постов
+        feedDummyElement.classList.remove('hidden');
+        feedPostElement.classList.add('hidden');
     }
 }
 

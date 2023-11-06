@@ -11,6 +11,16 @@
     margin-bottom: 7px;
 }
 
+.post__user-avatar{
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
+
 .post__user-subscribe{
     display: block;
     width: 22px;

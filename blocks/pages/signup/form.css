@@ -13,6 +13,10 @@
 .sign-up__photo-label img{
     width: inherit;
     height: inherit;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
 }
 
 .sign-up3 .sign-up__block-remember{

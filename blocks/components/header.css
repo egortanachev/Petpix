@@ -60,22 +60,28 @@
 .header__action-profile img{
     width: inherit;
     height: inherit;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
 }
 
 
 @media (min-width: 399.98px) {
     .header{
-        height: 60px;
+        height: 60px!important;
     }
-    .feed {
-        padding-top: 60px;
+    .body__portal{
+        padding-top: 68px!important;
     }
     .header__logo {
-        width: 102px;
-        height: 33px;
+        width: 102px!important;
+        height: 33px!important;
     }
-    .header__action-edit, .header__action-add, .header__action-profile {
-        width: 26px;
-        height: 26px;
+    .header__action-edit,
+    .header__action-add,
+    .header__action-profile {
+        width: 26px!important;
+        height: 26px!important;
     }
 }

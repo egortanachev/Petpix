@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petpix – Profile</title>
+    <title>Petpix – User</title>
     <!-- Background settings -->
     <meta name="theme-color" content="#ffffff">
     <!-- Favicon -->
@@ -30,9 +30,10 @@
             </svg>
         </a>
         <div class="header__actions">
-            <a href="edit.html" class="header__action-edit">
+            <a href="#" class="header__action-favorite">
                 <svg>
-                    <use xlink:href="./image/sprite.svg#profile__edit"></use>
+                    <use xlink:href="./image/sprite.svg#user__subscribe1"></use>
+                    <use xlink:href="./image/sprite.svg#user__subscribe2"></use>
                 </svg>
             </a>
             <div class="header__action-add">
@@ -43,6 +44,9 @@
                     </svg>
                 </label>
             </div>
+            <a href="profile.html" class="header__action-profile">
+                <img src="image/avatar/small/avatar4.jpg" alt="avatar">
+            </a>
         </div>
     </header>
 
@@ -50,16 +54,16 @@
     <section class="head">
         <div class="container">
             <div class="head__info">
-                <img class="head__info-photo" src="image/avatar/big/avatar4.jpg" alt="avatar">
+                <img class="head__info-photo" src="image/avatar/big/avatar2.jpg" alt="avatar">
                 <div class="head__info-value">
-                    <h2 class="head__info-username headline2">patricia</h2>
+                    <h2 class="head__info-username headline2">lucky113</h2>
                     <div class="head__info-value-block">
                         <div class="head__info-posts">
-                            <p class="head__info-posts-value bold14 headline3">1,234</p>
+                            <p class="head__info-posts-value bold14 headline3">5,307</p>
                             <p class="regular14">Posts</p>
                         </div>
                         <div class="head__info-followers">
-                            <p class="head__info-followers-value bold14">5,678</p>
+                            <p class="head__info-followers-value bold14">12,419</p>
                             <p class="regular14">Followers</p>
                         </div>
                     </div>
@@ -78,37 +82,37 @@
         <div class="container">
             <div class="post">
                 <div class="feed__post post liked">
-                    <img src="image/posts/post5.jpg" loading="lazy" alt="photo" class="post__photo">
+                    <img src="image/posts/post7.jpg" loading="lazy" alt="photo" class="post__photo">
                     <div class="post__info">
                         <div class="post__info-like">
                             <svg class="post__info-like-svg">
                                 <use xlink:href="./image/sprite.svg#post__like-inside"></use>
                                 <use xlink:href="./image/sprite.svg#post__like-outside"></use>
                             </svg>
-                            <p class="post__info-like-value headline3">1 153 Likes</p>
+                            <p class="post__info-like-value headline3">189 Likes</p>
                         </div>
                         <div class="post__info-date regular12">
-                            28/11/2023
+                            18/11/2023
                         </div>
                     </div>
                     <p class="post__description text__more regular14">
                         <span class="text__expand regular14">
-                            I love relax 
+                            Hi
                         </span>
                     </p>
                 </div>
                 <div class="feed__post post">
-                    <img src="image/posts/post6.jpg" loading="lazy" alt="photo" class="post__photo">
+                    <img src="image/posts/post8.jpg" loading="lazy" alt="photo" class="post__photo">
                     <div class="post__info">
                         <div class="post__info-like">
                             <svg class="post__info-like-svg">
                                 <use xlink:href="./image/sprite.svg#post__like-inside"></use>
                                 <use xlink:href="./image/sprite.svg#post__like-outside"></use>
                             </svg>
-                            <p class="post__info-like-value headline3">317 Likes</p>
+                            <p class="post__info-like-value headline3">211 Likes</p>
                         </div>
                         <div class="post__info-date regular12">
-                            26/11/2023
+                            24/11/2023
                         </div>
                     </div>
                     <p class="post__description text__more regular14">
@@ -123,6 +127,7 @@
 
     <!-- Scripts -->
     <script src="scripts/likePost.js"></script>
+    <script src="scripts/addFavorite.js"></script>
     <script src="scripts/showText.js"></script>
 </body>
 </html>
