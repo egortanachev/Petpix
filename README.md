@@ -1,4 +1,4 @@
-[![Deploy GithubPages](https://github.com/egortanachev/Petpix/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/egortanachev/Petpix/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/egortanachev/Petpix/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/egortanachev/Petpix/actions/workflows/pages/pages-build-deployment)
 
 # Petpix
 
