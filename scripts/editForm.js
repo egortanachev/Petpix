@@ -56,19 +56,19 @@ popupClose2.addEventListener('click', closePopup);
 
 function openPopup(event){
     event.preventDefault();
-    document.querySelector('.body').classList.toggle('modal')
-
     document.querySelector('meta[name="theme-color"]').setAttribute('content', '#c3c3c3');
+    
+    document.querySelector('.body').classList.toggle('modal')
 }
 
 function closePopup(event){
     event.preventDefault();
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff');
     
     document.querySelector('.body').classList.add('modal__close');
     setTimeout(() => {
         document.querySelector('.body').classList.remove('modal__close');
         document.querySelector('.body').classList.toggle('modal')
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff');
     }, 500);
 }
 
