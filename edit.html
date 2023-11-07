@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="body body__portal">
+<body class="body body__portal body__edit">
     <!-- HEADER -->
     <header class="header" id="header">
         <a href="index.html" class="header__logo">
@@ -65,14 +65,23 @@
                 
                 <button class="btn edit__btn medium16 disabled" type="submit" tabindex="4" disabled>Save</button>
 
-                <a href="#exit" class="edit__btn-exit medium16">Log out</a>
+                <a href="#exit" class="edit__btn-exit pop-up__open medium16">Log out</a>
             </form>
         </div>
     </section>
 
+    <!-- POP UP -->
+    <div class="edit__pop-up pop-up">
+        <div class="container">
+            <h3 class="pop-up__title headline2">
+                Are you sure you want<br>to log out?
+            </h3>
+            <a href="signin.html" class="btn pop-up__btn regular16">Log out</a>
+            <a href="#return" class="pop-up__cancel pop-up__close medium16">Cancel</a>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="scripts/editForm.js"></script>
-    
 </body>
 </html>

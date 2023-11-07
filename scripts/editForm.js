@@ -44,6 +44,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+// Pop up
+const popupOpen = document.querySelector('.pop-up__open');
+const popupClose = document.querySelector('.pop-up__close');
+
+popupOpen.addEventListener('click', (event) => {
+    event.preventDefault();
+    document.querySelector('.body').classList.toggle('modal')
+});
+
+popupClose.addEventListener('click', (event) => {
+    event.preventDefault();
+    document.querySelector('.body').classList.toggle('modal')
+});
+
+
 // Redirect EDIT
 function redirectEdit(event) {
     event.preventDefault();

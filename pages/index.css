@@ -35,5 +35,8 @@
 /* Head */
 @import url(../blocks/components/head/head.css);
 
+/* Pop up */
+@import url(../blocks/components/popup/popup.css);
+
 /* Text styles */
 @import url(../blocks/components/text.css);
