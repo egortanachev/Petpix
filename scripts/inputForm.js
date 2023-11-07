@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function redirect(event) {
     event.preventDefault();
     window.location.href = 'index.html';
+    localStorage.token = 'True';
 }
 
 // Redirect SIGN UP (1 step)
@@ -60,4 +61,5 @@ function redirect2(event) {
 function redirect3(event) {
     event.preventDefault();
     window.location.href = 'index.html';
+    localStorage.token = 'True';
 }

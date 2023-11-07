@@ -39,4 +39,4 @@ Petpix - это веб-приложение, созданное для люби�
 
 ## Ссылки
 
-- [Демо приложения](https://egortanachev.github.io/Petpix/signin.html)
+- [Демо приложения](https://egortanachev.github.io/Petpix/)

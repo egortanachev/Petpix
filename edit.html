@@ -78,12 +78,13 @@
             <h3 class="pop-up__title headline2">
                 Are you sure you want<br>to log out?
             </h3>
-            <a href="signin.html" class="btn pop-up__btn regular16">Log out</a>
+            <a href="signin.html" class="btn pop-up__btn regular16" onclick="delete localStorage.token;">Log out</a>
             <a href="#return" class="pop-up__cancel pop-up__close medium16">Cancel</a>
         </div>
     </div>
 
     <!-- Scripts -->
+    <script src="scripts/checkToken.js"></script>
     <script src="scripts/editForm.js"></script>
 </body>
 </html>
