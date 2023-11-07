@@ -35,3 +35,7 @@
     text-align: center;
     color: var(--grey3-color)
 }
+
+.edit textarea.input ~ .label {
+    top: -50px;
+}

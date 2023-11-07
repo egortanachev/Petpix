@@ -45,6 +45,21 @@
     transition: all 0.3s ease;
 }
 
+.header__action-favorite use:nth-child(1){
+    fill: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.header__action-favorite use:nth-child(2){
+    fill: var(--black-color);
+    transition: all 0.3s ease;
+}
+
+body.favorite .header__action-favorite use:nth-child(1),
+body.favorite .header__action-favorite use:nth-child(2){
+    fill: var(--error-color);
+}
+
 .header__action-edit:hover svg,
 .header__action-add:hover label svg{
     fill: var(--orange-color);

@@ -39,27 +39,46 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Redirect SIGN IN
-function redirect(event) {
+function redirectSignIn(event) {
     event.preventDefault();
-    window.location.href = 'index.html';
     localStorage.token = 'True';
+    window.location.href = 'index.html';
 }
 
 // Redirect SIGN UP (1 step)
-function redirect1(event) {
+function redirectSignUp1(event) {
     event.preventDefault();
     window.location.href = 'signup2.html';
 }
 
 // Redirect SIGN UP (2 step)
-function redirect2(event) {
+function redirectSignUp2(event) {
     event.preventDefault();
     window.location.href = 'signup3.html';
 }
 
 // Redirect SIGN UP (3 step)
-function redirect3(event) {
+function redirectSignUp3(event) {
+    event.preventDefault();
+    localStorage.token = 'True';
+    window.location.href = 'welcome.html';
+}
+
+// Redirect FORGOT (1 step)
+function redirectForgot1(event) {
+    event.preventDefault();
+    window.location.href = 'forgot2.html';
+}
+
+// Redirect FORGOT (3 step)
+function redirectForgot3(event) {
+    event.preventDefault();
+    localStorage.token = 'True';
+    window.location.href = 'index.html';
+}
+
+// Redirect ADD
+function redirectAdd(event) {
     event.preventDefault();
     window.location.href = 'index.html';
-    localStorage.token = 'True';
 }

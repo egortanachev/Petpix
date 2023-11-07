@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petpix – Sign up</title>
+    <title>Petpix – Forgot</title>
     <!-- Background settings -->
     <meta name="theme-color" content="#ffffff">
     <!-- Favicon -->
@@ -22,24 +22,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-    <!-- SIGN UP -->
-    <section class="sign-up">
+    <!-- FORGOT -->
+    <section class="forgot forgot2">
         <div class="container">
-            <div class="sign-up__head">
-                <h1 class="sign-up__title headline1">Sign up</h1>
-                <a class="sign-up__logo" href="signin.html">
-                    <svg class="logo__big">
-                        <use xlink:href="./image/sprite.svg#logo__big"></use>
-                    </svg>
-                </a>
+            <div class="forgot__head">
+                <h1 class="forgot__title headline1">Email sent</h1>
+                <p class="forgot__description regular14">We have sent a link to restore access to your account to the specified address</p>
             </div>
-            <form class="form sign-up__form" onsubmit="redirectSignUp2(event)">
-                <span class="block-input sign-up__block-input">
-                    <input class="input sign-up__input input__code regular16" type="number" id="sign-up__input-code" placeholder="Сonfirmation code" tabindex="1" min="1000" max="9999" required>
-                    <label class="label sign-up__label regular16" for="sign-up__input-email">Сonfirmation code</label>
-                </span>
-                <button class="btn sign-up__btn disabled regular16" type="submit" tabindex="2" disabled>Next</button>
-            </form>
+            <a href="signin.html" class="btn forgot__btn regular16">Ok</a>
         </div>
     </section>
 

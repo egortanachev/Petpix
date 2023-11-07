@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petpix – Sign up</title>
+    <title>Petpix – Forgot</title>
     <!-- Background settings -->
     <meta name="theme-color" content="#ffffff">
     <!-- Favicon -->
@@ -22,23 +22,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-    <!-- SIGN UP -->
-    <section class="sign-up">
+    <!-- FORGOT -->
+    <section class="forgot">
         <div class="container">
-            <div class="sign-up__head">
-                <h1 class="sign-up__title headline1">Sign up</h1>
-                <a class="sign-up__logo" href="signin.html">
-                    <svg class="logo__big">
-                        <use xlink:href="./image/sprite.svg#logo__big"></use>
-                    </svg>
-                </a>
+            <div class="forgot__head">
+                <h1 class="forgot__title headline1">Enter a new<br>password</h1>
+                <p class="forgot__description regular14">The password must contain 8 symbols, of which there must be at least 1 letter and at least 1 number</p>
             </div>
-            <form class="form sign-up__form" onsubmit="redirectSignUp2(event)">
-                <span class="block-input sign-up__block-input">
-                    <input class="input sign-up__input input__code regular16" type="number" id="sign-up__input-code" placeholder="Сonfirmation code" tabindex="1" min="1000" max="9999" required>
-                    <label class="label sign-up__label regular16" for="sign-up__input-email">Сonfirmation code</label>
+            <form class="form forgot__form" onsubmit="redirectForgot3(event)">
+                <span class="block-input forgot__block-input">
+                    <input class="input forgot__input input__password regular16" type="password" id="forgot__input-password" placeholder="Password" tabindex="1" required>
+                    <label class="label forgot__label regular16" for="forgot__input-password">Password</label>
                 </span>
-                <button class="btn sign-up__btn disabled regular16" type="submit" tabindex="2" disabled>Next</button>
+                <button class="btn forgot__btn regular16 disabled" type="submit" tabindex="2" disabled>Sign in</button>
             </form>
         </div>
     </section>

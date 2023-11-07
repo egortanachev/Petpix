@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petpix – Sign up</title>
+    <title>Petpix – Welcome</title>
     <!-- Background settings -->
     <meta name="theme-color" content="#ffffff">
     <!-- Favicon -->
@@ -21,29 +21,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="body">
-    <!-- SIGN UP -->
-    <section class="sign-up">
+<body class="body body__welcome">
+    <!-- WELCOME -->
+    <section class="welcome">
         <div class="container">
-            <div class="sign-up__head">
-                <h1 class="sign-up__title headline1">Sign up</h1>
-                <a class="sign-up__logo" href="signin.html">
-                    <svg class="logo__big">
-                        <use xlink:href="./image/sprite.svg#logo__big"></use>
-                    </svg>
-                </a>
+            <div class="welcome__head">
+                <h1 class="welcome__title headline1">Welcome<br>to Petpix!</h1>
             </div>
-            <form class="form sign-up__form" onsubmit="redirectSignUp2(event)">
-                <span class="block-input sign-up__block-input">
-                    <input class="input sign-up__input input__code regular16" type="number" id="sign-up__input-code" placeholder="Сonfirmation code" tabindex="1" min="1000" max="9999" required>
-                    <label class="label sign-up__label regular16" for="sign-up__input-email">Сonfirmation code</label>
-                </span>
-                <button class="btn sign-up__btn disabled regular16" type="submit" tabindex="2" disabled>Next</button>
-            </form>
+            <a href="index.html" class="btn welcome__btn regular16">Get started</a>
         </div>
     </section>
-
-    <!-- Scripts -->
-    <script src="scripts/inputForm.js"></script>
 </body>
 </html>

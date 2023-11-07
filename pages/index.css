@@ -11,8 +11,17 @@
 /* Sign up */
 @import url(../blocks/pages/signup/signup.css);
 
+/* Welcome */
+@import url(../blocks/pages/welcome/welcome.css);
+
+/* Forgot */
+@import url(../blocks/pages/forgot/forgot.css);
+
 /* Index */
 @import url(../blocks/pages/index/index.css);
+
+/* Add */
+@import url(../blocks/pages/add/add.css);
 
 /* Profile */
 @import url(../blocks/pages/profile/profile.css);
