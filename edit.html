@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petpix – Edit</title>
+    <!-- Background settings -->
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="image/favicon/site.webmanifest">
+    <link rel="mask-icon" href="image/favicon/safari-pinned-tab.svg" color="#ff914a">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Style -->
+    <link rel="stylesheet" href="pages/index.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="body body__portal">
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <a href="index.html" class="header__logo">
+            <svg class="logo__big">
+                <use xlink:href="./image/sprite.svg#logo__big"></use>
+            </svg>
+        </a>
+        <div class="header__actions">
+            <a href="profile.html" class="header__action-profile">
+                <img src="image/avatar/small/avatar4.jpg" alt="avatar">
+            </a>
+        </div>
+    </header>
+
+    <!-- EDIT -->
+    <section class="edit">
+        <div class="container">
+            <form class="form edit__form" onsubmit="redirectEdit(event)">
+                <div class="edit__block-photo">
+                    <img src="image/avatar/big/avatar4.jpg" alt="avatar">
+                    <div class="edit__block-photo-info">
+                        <h2 class="edit__block-photo-username headline2">patricia</h2>                    
+                        <input class="edit__photo-input" type="file" id="edit__photo">
+                        <label class="edit__photo-label regular14" for="edit__photo">
+                            Change profile photo
+                        </label>
+                    </div>
+                </div>
+                <span class="block-input edit__block-input">
+                    <input class="input edit__input input__firstName regular16" type="text" id="edit__input-firstName" value="Svetlana" placeholder="First name" tabindex="1" required>
+                    <label class="label edit__label regular16" for="edit__input-firstName">First name</label>
+                </span>
+                <span class="block-input edit__block-input">
+                    <input class="input edit__input input__userName regular16" type="email" id="edit__input-userName" value="username@gmail.com" placeholder="Username" tabindex="2" required>
+                    <label class="label edit__label regular16" for="edit__input-userName">Email</label>
+                </span>
+                <span class="block-input edit__block-input">
+                    <textarea class="input edit__input input__userName regular14" id="edit__input-userName">Lorem ipsum dolor sit amet, consectetur adipiscing blabla vla jjjncsjnjdnbhdvhjdv Lorem ipsum dolor sit amet, consectetur adipiscing blabla vla jjjncsjnjdnbhdvhjdv Lorem ipsum dolor sit amet, consectetur adipiscing blabla</textarea>
+                    <label class="label edit__label regular16" for="edit__input-userName">About you</label>
+                </span>
+                
+                <button class="btn edit__btn medium16 disabled" type="submit" tabindex="4" disabled>Save</button>
+
+                <a href="#exit" class="edit__btn-exit medium16">Log out</a>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="scripts/editForm.js"></script>
+    
+</body>
+</html>

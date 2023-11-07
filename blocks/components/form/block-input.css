@@ -12,3 +12,8 @@
     transform: translateY(-12px);
     font-size: var(--text12-size);
 }
+
+.block-input textarea.input:focus~.label,
+.block-input textarea.input:not(:placeholder-shown)~.label{
+    transform: translateY(-61px);
+}

@@ -47,6 +47,13 @@ input[type="radio"]{
     display: none;
 }
 
+textarea.input{
+    height: 147px;
+    border-radius: 16px;
+    padding-top: 20px;
+    resize: none;
+}
+
 .password-show{
     display: block;
     width: 24px;
