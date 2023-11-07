@@ -1,6 +1,6 @@
-[![Deploy GithubPages](https://github.com/egortanachev/Petpix/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/egortanachev/Petpix/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/egortanachev/Petpix/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/egortanachev/Petpix/actions/workflows/pages/pages-build-deployment)
 
-# Petpix 
+# Petpix
 
 Petpix - это веб-приложение, созданное для любителей домашних животных. Загружайте фотографии своих питомцев, наслаждайтесь просмотром фотогалереи и общайтесь с другими пользователями.
 
