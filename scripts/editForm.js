@@ -57,6 +57,14 @@ popupClose2.addEventListener('click', closePopup);
 function openPopup(event){
     event.preventDefault();
     document.querySelector('.body').classList.toggle('modal')
+
+    // Найти элемент <meta name="theme-color">
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+    if (metaThemeColor) {
+        // Изменить содержимое атрибута content на новый цвет (например, #ff0000)
+        metaThemeColor.setAttribute('content', '#ff0000');
+    }
 }
 
 function closePopup(event){
@@ -67,6 +75,14 @@ function closePopup(event){
         document.querySelector('.body').classList.remove('modal__close');
         document.querySelector('.body').classList.toggle('modal')
     }, 500);
+
+    // Найти элемент <meta name="theme-color">
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+    if (metaThemeColor) {
+        // Изменить содержимое атрибута content на новый цвет (например, #ff0000)
+        metaThemeColor.setAttribute('content', '#ffffff');
+    }
 }
 
 
