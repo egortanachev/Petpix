@@ -1,15 +1,13 @@
-.body__edit{
+.modal{
     overflow: hidden;
 }
 
-.body__edit::before{
-    content: '';
+.popup__dark{
     background: none;
-    transition: transform 0.5s ease;
+    transition: background 0.5s ease;
 }
 
-.body.modal::before{
-    content: '';
+.modal .popup__dark{
     display: block;
     width: 100%;
     height: 100%;
@@ -20,12 +18,17 @@
     z-index: 4;
 }
 
+.modal__close .popup__dark{
+    background: none!important;
+    transition: background 0.5s ease!important;
+}
+
 .pop-up{
     background: #fff;
     width: 100%;
     max-width: 575px;
     min-height: 250px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 250px);
@@ -37,6 +40,11 @@
 
 .body.modal .pop-up{
     transform: translate(-50%, 0);
+}
+
+.modal__close .pop-up{
+    transform: translate(-50%, 250px)!important;
+    transition: transform 0.5s ease!important;
 }
 
 .pop-up__title{
