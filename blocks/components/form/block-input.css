@@ -15,5 +15,5 @@
 
 .block-input textarea.input:focus~.label,
 .block-input textarea.input:not(:placeholder-shown)~.label{
-    transform: translateY(-61px);
+    transform: translateY(-10px);
 }
