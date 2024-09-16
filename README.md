@@ -15,7 +15,7 @@ Petpix - это веб-приложение, созданное для люби�
 
 Проект Petpix использует следующие технологии:
 
-- **Frontend:** HTML, CSS, JavaScript, React
+- **Frontend:** HTML, CSS, JavaScript, [React](https://github.com/Ras-svet/petpix-react)
 - **Backend:** [Petpix API](https://github.com/Anpanman4/petpix-api)
 
 ## Установка
